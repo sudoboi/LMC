@@ -106,7 +106,7 @@ if __name__ == '__main__':
             data_iterator = iter(trainloader)
             train_data = next(data_iterator)
         if(train_i % 10 == 0):
-            print('Iteration: ' + train_i)
+            print('Iteration: ' + str(train_i))
         # define data indexes
         short_start, short_end = 0, args.short_len
         long_start = np.random.randint(0, args.short_len+args.out_len-args.long_len+1)
